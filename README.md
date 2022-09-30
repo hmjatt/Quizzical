@@ -972,7 +972,7 @@ npm start
 
 2. Figma Design
 
-    - [Tenzies](https://www.figma.com/file/FqsxRUhAaXM4ezddQK0CdR/Untitled?node-id=0%3A1)
+    - [Tenzies](https://www.figma.com/file/E9S5iPcm10f0RIHK8mCqKL/Quizzical-App?node-id=0%3A1)
 
 3. Scrimba
 
@@ -988,6 +988,10 @@ npm start
     - [Forms](https://reactjs.org/docs/forms.html)
     - [Using the State Hook](https://reactjs.org/docs/hooks-state.html)
     - [Using the Effect Hook](https://reactjs.org/docs/hooks-effect.html)
+
+5. Trivia API
+
+	- [Official Website](https://opentdb.com/api_config.php)
 
 <br>
 
