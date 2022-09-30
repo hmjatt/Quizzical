@@ -997,7 +997,7 @@ npm start
 
 #### Quote ✒️
 
-    “Humans are allergic to change. They love to say, ‘We’ve always done it this way.’ I try to fight that. That’s why I have a clock on my wall that runs counterclockwise.”
-    — Grace Hopper
+    “All parts should go together without forcing.  You must remember that the parts you are reassembling were disassembled by you.  Therefore, if you can’t get them together again, there must be a reason.  By all means, do not use a hammer."
+    — IBM Manual, 1925
 
 > ♾️❇️🔥
