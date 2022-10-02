@@ -6,9 +6,13 @@ Create a Trivia Game using ReactJS
 ![This is an image]()
 ![This is an image]()
 
+<!-- 
+
 ## About ℹ️
 
 An implementation of **`Tenzies Game`** in `ReactJS`. While creating this project I learned about `Event Listeners in React`, `React State`, `Conditional Rendering in React`, `React Hooks(useEffect)`, etc. A player could track the number of rolls, current time and best time it took to win the game. Have Fun :smile:. After creating the project, it was deployed to `GitHub Pages` :bird: Feel free to reach me on[Twitter](https://twitter.com/hmjatt/) 👾
+
+-->
 
 ## Technologies Used 💻
 
@@ -28,6 +32,8 @@ An implementation of **`Tenzies Game`** in `ReactJS`. While creating this projec
     - github-pages
 
 <br>
+
+<!-- 
 
 ## Usage 🤓
 
