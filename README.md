@@ -1,18 +1,18 @@
 # Quizzical 🧩
 Create a Trivia Game using ReactJS
+
 <!-- 
 ## [Live Preview]()
 
 ![This is an image]()
 ![This is an image]()
 
-<!-- 
+-->
 
 ## About ℹ️
 
-An implementation of **`Tenzies Game`** in `ReactJS`. While creating this project I learned about `Event Listeners in React`, `React State`, `Conditional Rendering in React`, `React Hooks(useEffect)`, etc. A player could track the number of rolls, current time and best time it took to win the game. Have Fun :smile:. After creating the project, it was deployed to `GitHub Pages` :bird: Feel free to reach me on[Twitter](https://twitter.com/hmjatt/) 👾
+**`Quizzical`** is a *Trivia* game implemented in `ReactJS`. While creating this project I learned about `Event Listeners in React`, `React State`, `Conditional Rendering in React`, `React Hooks(useEffect)`, etc. A player is given *5 random questions* with *4 choices* each. Trivia questions are retrieved from [*Open Trivia Database API*](https://opentdb.com/api_config.php). A participant can *validate* their answers and can play as many times as they want. Have Fun :smile:. After creating the project, it was deployed to `GitHub Pages` :bird: Feel free to reach me on[Twitter](https://twitter.com/hmjatt/) 👾
 
--->
 
 ## Technologies Used 💻
 
@@ -22,6 +22,7 @@ An implementation of **`Tenzies Game`** in `ReactJS`. While creating this projec
 
 ## Includes the following features/components ⚙️
 
+	- Open Trivia Database API
     - ReactJS
     - create-react-app
     - Figma Design Template
