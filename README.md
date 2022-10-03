@@ -67,12 +67,13 @@ npm start
 ### 2. Organize Project 🗄️
 
 -   [x] Create a `components` folder for **custom components** inside the `src` directory.
--   [ ] Create a `styles` folder inside the `src` directory and move `.css` files inside it.
+-   [x] Create a `styles` folder inside the `src` directory and move `.css` files inside it.
 
-<!--
 ### 3. Clean Directory🧹
 
 -   [ ] Delete **unnecessary** files and code from the directory.
+
+<!--
 
 ### 4. App Component 🧩
 
