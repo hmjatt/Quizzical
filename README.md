@@ -60,9 +60,9 @@ npm start
 
 ### 1. Initialize Project 🎍
 
--   [ ] Initialize the project using `npx create-react-app quizzical` which will create a
+-   [x] Initialize the project using `npx create-react-app quizzical` which will create a
         complete **React App** pre-configured and pre-installed with all the dependencies.
--   [ ] Import **`Karla`** font from google fonts and apply it to the **`App`** component.
+-   [x] Import **`Work Sans`** font from google fonts and apply it to the **`App`** component.
 
 <!--
 ### 2. Organize Project 🗄️
