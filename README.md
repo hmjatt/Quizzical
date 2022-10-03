@@ -64,13 +64,13 @@ npm start
         complete **React App** pre-configured and pre-installed with all the dependencies.
 -   [x] Import **`Work Sans`** font from google fonts and apply it to the **`App`** component.
 
-<!--
 ### 2. Organize Project 🗄️
 
 -   [ ] Create a `components` folder inside the `src` directory.
 -   [ ] Create **custom components** inside the `components` folder.
 -   [ ] Create a `styles` folder inside the `src` directory and add `.css` files inside it.
 
+<!--
 ### 3. Clean Directory🧹
 
 -   [ ] Delete **unnecessary** files and code from the directory.
