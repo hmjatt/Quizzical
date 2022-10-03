@@ -54,200 +54,88 @@ npm start
 
 <br>
 
-<!--
+
 
 ## Steps I followed to complete this project 🪜
 
 ### 1. Initialize Project 🎍
 
--   [x] Initialize the project using `npx create-react-app tenzies` which will create a
+-   [ ] Initialize the project using `npx create-react-app quizzical` which will create a
         complete **React App** pre-configured and pre-installed with all the dependencies.
--   [x] Import **`Karla`** font from google fonts and apply it to the **`App`** component.
+-   [ ] Import **`Karla`** font from google fonts and apply it to the **`App`** component.
 
+<!--
 ### 2. Organize Project 🗄️
 
--   [x] Create a `components` folder inside the `src` directory.
--   [x] Create **custom components** inside the `components` folder.
--   [x] Create a `styles` folder inside the `src` directory and add `.css` files inside it.
+-   [ ] Create a `components` folder inside the `src` directory.
+-   [ ] Create **custom components** inside the `components` folder.
+-   [ ] Create a `styles` folder inside the `src` directory and add `.css` files inside it.
 
 ### 3. Clean Directory🧹
 
--   [x] Delete **unnecessary** files and code from the directory.
+-   [ ] Delete **unnecessary** files and code from the directory.
 
 ### 4. App Component 🧩
 
--   [x] Create a **`App`** component and basic JSX elements for it.
--   [x] Add appropriate `className`s to elements in the **`App`** component.
--   [x] Import **`App`** component inside `index.js`. Code inside `index.js` looks like this :-
+-   [ ] Create a **`App`** component and basic JSX elements for it.
+-   [ ] Add appropriate `className`s to elements in the **`App`** component.
+-   [ ] Import **`App`** component inside `index.js`. Code inside `index.js` looks like this ->
 
     ```javascript
-    import React from "react";
-    import ReactDOM from "react-dom/client";
-    import "./styles/index.css";
-    import App from "./App";
-
-    const root = ReactDOM.createRoot(document.getElementById("root"));
-    root.render(
-        <React.StrictMode>
-            <App />
-        </React.StrictMode>
-    );
     ```
 
--   [x] Add these styles to `index.css` :-
+-   [ ] Add these styles to `index.css` ->
 
     ```css
-    body {
-        margin: 0;
-        background-color: #0b2434;
-    }
 
-    * {
-        box-sizing: border-box;
-    }
     ```
 
--   [x] Style **`App`** component by editing `App.css` and add these styles :-
+-   [ ] Style **`App`** component by editing `App.css` and add these styles ->
 
     ```css
-    .App {
-        font-family: "Karla", sans-serif;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
 
-    main {
-        background-color: #f5f5f5;
-        height: 40em;
-        width: 40em;
-        border-radius: 10px;
-        box-shadow: rgba(254, 254, 254, 0.25) 0px 13px 27px -5px, rgba(
-                    255,
-                    255,
-                    255,
-                    0.3
-                ) 0px 8px 16px -8px;
-    }
     ```
 
-    Output :-
-    ![This is an image](https://github.com/hmjatt/Tenzies-ReactJS/blob/main/project-output/step-4.png)
+    Output ->
 
-### 5. Dice Component 🧩
 
--   [x] Create a **`Dice`** component and basic JSX elements for it.
--   [x] Add appropriate `className`s to elements in the **`Dice`** component.
+### 5. Quiz Component 🧩
 
-    -   Update code inside `App.js` and it should look like this :-
+-   [ ] Create a **`Quiz`** component and basic JSX elements for it.
+-   [ ] Add appropriate `className`s to elements in the **`Quiz`** component.
+
+    -   Update code inside `App.js` and it should look like this ->
 
         ```javascript
-        import "./styles/App.css";
-        import Dice from "./components/Dice";
-        import Footer from "./components/Footer";
 
-        function App() {
-            function allNewDice() {
-                const newDice = [];
-                for (let i = 0; i < 10; i++) {
-                    newDice.push(Math.ceil(Math.random() * 6));
-                }
-                return newDice;
-            }
-            console.log(allNewDice());
-            return (
-                <div className="App">
-                    <main>
-                        <div className="dice-container">
-                            <Dice value="1" />
-                            <Dice value="2" />
-                            <Dice value="3" />
-                            <Dice value="4" />
-                            <Dice value="5" />
-                            <Dice value="6" />
-                            <Dice value="1" />
-                            <Dice value="2" />
-                            <Dice value="3" />
-                            <Dice value="4" />
-                        </div>
-                    </main>
-                    <Footer />
-                </div>
-            );
-        }
-        export default App;
         ```
 
-    -   Code inside `Dice.js` looks like this :-
+    -   Code inside `Quiz.js` looks like this ->
 
     ```javascript
-    function Dice(props) {
-        return (
-            <div className="dice-face">
-                <h2 className="dice-num">{props.value}</h2>
-            </div>
-        );
-    }
-    export default Dice;
+
     ```
 
--   [x] Style **`Dice`** component by editing `App.css` and add these styles :-
+-   [ ] Style **`Quiz`** component by editing `App.css` and add these styles ->
 
     ```css
-    main {
-        background-color: #f5f5f5;
-        height: 40em;
-        width: 40em;
-        border-radius: 10px;
-        box-shadow: rgba(254, 254, 254, 0.25) 0px 13px 27px -5px, rgba(
-                    255,
-                    255,
-                    255,
-                    0.3
-                ) 0px 8px 16px -8px;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
 
-    .dice-container {
-        display: grid;
-        grid-template: auto auto / repeat(5, 1fr);
-        gap: 20px;
-    }
 
-    /* Dice Component */
-    .dice-face {
-        height: 50px;
-        width: 50px;
-        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        background-color: white;
-    }
+    /* Quiz Component */
 
-    .dice-num {
-        font-size: 2rem;
-    }
-    /* Dice Component */
+    /* Quiz Component */
     ```
 
-    Output :-
+    Output ->
     ![This is an image](https://github.com/hmjatt/Tenzies-ReactJS/blob/main/project-output/step-5-before-dots.png)
 
 ### 6. Footer Component 🧩
 
--   [x] Create **`Footer`** component and basic JSX elements for it.
--   [x] Import **`Footer`** component inside `App` component.
--   [x] Style **`Footer`** component.
+-   [ ] Create **`Footer`** component and basic JSX elements for it.
+-   [ ] Import **`Footer`** component inside `App` component.
+-   [ ] Style **`Footer`** component.
+
+<!--
 
 ### 7. Generate Array of 10 Random Numbers 🔃
 
