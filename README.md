@@ -36,20 +36,29 @@ Create a Trivia Game using ReactJS
  
 
 ## Usage 🤓
-
+```bash
+### Clone the repository using GitHub CLI (or HTTPS if you want)
+gh repo clone hmjatt/Quizzical
 ```
+
+```bash
+### Go to the Project folder
 cd quizzical
-
 ```
 
-```
+```bash
+### Install Dependencies
 npm install
-
 ```
 
-```
+```bash
+### Starts the Development Server(App will open in a new window)
 npm start
+```
 
+```bash
+### Run Tests using this command
+npm run test
 ```
 
 <br>
