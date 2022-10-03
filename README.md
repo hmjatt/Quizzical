@@ -32,13 +32,12 @@ An implementation of **`Tenzies Game`** in `ReactJS`. While creating this projec
     - github-pages
 
 <br>
-
-<!-- 
+ 
 
 ## Usage 🤓
 
 ```
-cd tenzies
+cd quizzical
 
 ```
 
@@ -53,6 +52,8 @@ npm start
 ```
 
 <br>
+
+<!--
 
 ## Steps I followed to complete this project 🪜
 
