@@ -37,7 +37,7 @@ Create a Trivia Game using ReactJS
 
 ## Usage 🤓
 ```bash
-### Clone the repository using GitHub CLI (or HTTPS if you want)
+### Clone the repository using GitHub CLI
 gh repo clone hmjatt/Quizzical
 ```
 
