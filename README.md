@@ -80,8 +80,8 @@ npm run test
 
 ### 3. Clean Directory🧹
 
--   [ ] Delete **unnecessary** files.
--   [ ] Create a `tests` folder inside the `src` directory and move `.test.js` files inside it.
+-   [x] Delete **unnecessary** files.
+-   [x] Create a `tests` folder inside the `src` directory and move `.test.js` files inside it.
 -	[ ] Delete **unnecessary** code.
 
 <!--
