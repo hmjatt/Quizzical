@@ -82,7 +82,7 @@ npm run test
 
 -   [x] Delete **unnecessary** files.
 -   [x] Create a `tests` folder inside the `src` directory and move `.test.js` files inside it.
--	[ ] Delete **unnecessary** code.
+-	[x] Delete **unnecessary** code.
 
 <!--
 
