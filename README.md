@@ -84,15 +84,18 @@ npm run test
 -   [x] Create a `tests` folder inside the `src` directory and move `.test.js` files inside it.
 -	[x] Delete **unnecessary** code.
 
-<!--
+
 
 ### 4. App Component 🧩
 
--   [ ] Create a **`App`** component and basic JSX elements for it.
+-   [ ] Create `tests` for **`App`** component.
+-   [ ] Create an **`App`** component and basic JSX elements for it.
 -   [ ] Add appropriate `className`s to elements in the **`App`** component.
--   [ ] Import **`App`** component inside `index.js`. Code inside `index.js` looks like this ->
+-   [ ] Run `tests` for **`App`** component and make sure all of them pass.
+-   [ ] Import **`App`** component inside `index.js`. Code inside `App.js` looks like this ->
 
     ```javascript
+
     ```
 
 -   [ ] Add these styles to `index.css` ->
@@ -109,7 +112,7 @@ npm run test
 
     Output ->
 
-
+<!--
 ### 5. Quiz Component 🧩
 
 -   [ ] Create a **`Quiz`** component and basic JSX elements for it.
