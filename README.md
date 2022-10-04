@@ -42,7 +42,7 @@ gh repo clone hmjatt/Quizzical
 ```
 
 ```bash
-### Go to the Project folder
+### Go to the quizzical folder
 cd quizzical
 ```
 
@@ -57,6 +57,9 @@ npm start
 ```
 
 ```bash
+### Go to the tests folder
+cd src/tests
+
 ### Run Tests using this command
 npm run test
 ```
