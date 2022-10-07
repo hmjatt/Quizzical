@@ -114,7 +114,7 @@ npm run test
 
     Output ->
 
-<!--
+
 ### 5. Quiz Component 🧩
 
 -   [ ] Create a **`Quiz`** component and basic JSX elements for it.
@@ -132,6 +132,7 @@ npm run test
 
     ```
 
+<!--
 -   [ ] Style **`Quiz`** component by editing `App.css` and add these styles ->
 
     ```css
