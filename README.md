@@ -56,13 +56,13 @@ npm install
 npm start
 ```
 
-```bash
+<!-- ```bash
 ### Go to the tests folder
 cd src/tests
 
 ### Run Tests using this command
 npm run test
-```
+``` -->
 
 <br>
 
