@@ -146,7 +146,7 @@ npm run test
     Output ->
     <!-- ![This is an image](https://github.com/hmjatt/Tenzies-ReactJS/blob/main/project-output/step-5-before-dots.png) -->
 
-<!--
+
 ### 6. Footer Component 🧩
 
 -   [ ] Create **`Footer`** component and basic JSX elements for it.
