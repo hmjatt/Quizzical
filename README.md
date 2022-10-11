@@ -845,11 +845,17 @@ npm run test
 
     Output -> ![This is an image](https://github.com/hmjatt/Tenzies-ReactJS/blob/main/project-output/Best-Time.png)
 
+-->
+
+
+
 ### 19. Make App Responsive 📱
 
 -   [x] Change _Absolute_ units to _Relative_.
 
 -   [x] Make App responsive for mobile by adding `media query`. :smiley:
+
+<!--
 
 ### 20. Prepare for Deployment 🪢
 
