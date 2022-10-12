@@ -855,7 +855,7 @@ npm run test
 
 -   [x] Make App responsive for mobile by adding `media query`. :smiley:
 
-<!--
+
 
 ### 20. Prepare for Deployment 🪢
 
@@ -864,6 +864,8 @@ npm run test
 -   [x] Test for _Responsiveness_ and make changes if need be.
 
 -   [x] Add links to `Live Preview` and _screenshots_.
+
+<!--
 
 ### 21. Deploy 📤
 
