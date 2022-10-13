@@ -91,7 +91,7 @@ npm run test
 
 ### 4. App Component 🧩
 
--   [ ] Create an **`App`** component and basic JSX elements for it.
+-   [x] Create an **`App`** component and basic JSX elements for it.
 -   [ ] Add appropriate `className`s to elements in the **`App`** component.
 -   [ ] Run `tests` for **`App`** component and make sure all of them pass.
 -   [ ] Import **`App`** component inside `index.js`. Code inside `App.js` looks like this ->
