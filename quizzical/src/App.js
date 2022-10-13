@@ -3,14 +3,13 @@ import "./styles/App.css";
 function App() {
     return (
         <div className="App">
-            <a
-                className="App-link"
-                href="https://reactjs.org"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Learn React
-            </a>
+
+			<h1>Quizzical</h1>
+            
+            <h3>A Trivia Game that tests your knowledge of most unimportant topics 😃</h3>
+
+			<button>Start Quiz</button>
+            
         </div>
     );
 }
