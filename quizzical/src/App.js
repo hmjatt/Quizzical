@@ -4,7 +4,7 @@ function App() {
     return (
         <div className="App">
 
-			<h1>Quizzical</h1>
+			<h1 className="heading">Quizzical</h1>
             
             <h3>A Trivia Game that tests your knowledge of most unimportant topics 😃</h3>
 
