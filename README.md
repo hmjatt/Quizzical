@@ -1,7 +1,8 @@
 # Quizzical 🧩
+
 Create a Trivia Game using ReactJS
 
-<!-- 
+<!--
 ## [Live Preview]()
 
 ![This is an image]()
@@ -11,8 +12,7 @@ Create a Trivia Game using ReactJS
 
 ## About ℹ️
 
-**`Quizzical`** is a *Trivia* game implemented in `ReactJS`. While creating this project I learned about `Event Listeners in React`, `React State`, `Conditional Rendering in React`, `React Hooks(useEffect)`, etc. A player is given *5 random questions* with *4 choices* each. Trivia questions are retrieved from [*Open Trivia Database API*](https://opentdb.com/api_config.php). A participant can *validate* their answers and can play as many times as they want. Have Fun :smile:. After creating the project, it was deployed to `GitHub Pages` :bird: Feel free to reach me on[Twitter](https://twitter.com/hmjatt/) 👾
-
+**`Quizzical`** is a _Trivia_ game implemented in `ReactJS`. While creating this project I learned about `Event Listeners in React`, `React State`, `Conditional Rendering in React`, `React Hooks(useEffect)`, etc. A player is given _5 random questions_ with _4 choices_ each. Trivia questions are retrieved from [_Open Trivia Database API_](https://opentdb.com/api_config.php). A participant can _validate_ their answers and can play as many times as they want. Have Fun :smile:. After creating the project, it was deployed to `GitHub Pages` :bird: Feel free to reach me on[Twitter](https://twitter.com/hmjatt/) 👾
 
 ## Technologies Used 💻
 
@@ -22,7 +22,7 @@ Create a Trivia Game using ReactJS
 
 ## Includes the following features/components ⚙️
 
-	- Open Trivia Database API
+    - Open Trivia Database API
     - ReactJS
     - create-react-app
     - Figma Design Template
@@ -33,9 +33,10 @@ Create a Trivia Game using ReactJS
     - github-pages
 
 <br>
- 
+
 
 ## Usage 🤓
+
 ```bash
 ### Clone the repository using GitHub CLI
 gh repo clone hmjatt/Quizzical
@@ -66,8 +67,6 @@ npm run test
 
 <br>
 
-
-
 ## Steps I followed to complete this project 🪜
 
 ### 1. Initialize Project 🎍
@@ -85,18 +84,33 @@ npm run test
 
 -   [x] Delete **unnecessary** files.
 -   [x] Create a `tests` folder inside the `src` directory and move `.test.js` files inside it.
--	[x] Delete **unnecessary** code.
-
-
+-   [x] Delete **unnecessary** code.
 
 ### 4. App Component 🧩
 
 -   [x] Create an **`App`** component and basic JSX elements for it.
 -   [x] Add appropriate `className`s to elements in the **`App`** component.
--   [ ] Import **`App`** component inside `index.js`. Code inside `App.js` looks like this ->
+-   [x] Import **`App`** component inside `index.js`. Code inside `App.js` looks like this ->
 
     ```javascript
+    import "./styles/App.css";
 
+    function App() {
+        return (
+            <div className="App">
+                <h1 className="heading">Quizzical</h1>
+
+                <h3 className="subHeading">
+                    A Trivia Game that tests your knowledge of most unimportant
+                    topics 😃
+                </h3>
+
+                <button className="startBtn">Start Quiz</button>
+            </div>
+        );
+    }
+
+    export default App;
     ```
 
 -   [ ] Add these styles to `index.css` ->
@@ -112,7 +126,6 @@ npm run test
     ```
 
     Output ->
-
 
 ### 5. Quiz Component 🧩
 
@@ -131,12 +144,9 @@ npm run test
 
     ```
 
-
 -   [ ] Style **`Quiz`** component by editing `App.css` and add these styles ->
 
     ```css
-
-
     /* Quiz Component */
 
     /* Quiz Component */
@@ -144,7 +154,6 @@ npm run test
 
     Output ->
     <!-- ![This is an image](https://github.com/hmjatt/Tenzies-ReactJS/blob/main/project-output/step-5-before-dots.png) -->
-
 
 ### 6. Footer Component 🧩
 
@@ -846,15 +855,11 @@ npm run test
 
 -->
 
-
-
 ### 19. Make App Responsive 📱
 
 -   [x] Change _Absolute_ units to _Relative_.
 
 -   [x] Make App responsive for mobile by adding `media query`. :smiley:
-
-
 
 ### 20. Prepare for Deployment 🪢
 
@@ -880,7 +885,7 @@ npm run test
 -   [x] JS - Save _Best Time/Rolls_ to `localStorage` and try to beat the record. ✅
 
 <br>
- 
+
 -->
 
 ## Links to content that helped me with this project 🔗
@@ -912,7 +917,7 @@ npm run test
 
 5. Trivia API
 
-	- [Official Website](https://opentdb.com/api_config.php)
+    - [Official Website](https://opentdb.com/api_config.php)
 
 <br>
 
