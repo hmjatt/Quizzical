@@ -6,9 +6,9 @@ function App() {
 
 			<h1 className="heading">Quizzical</h1>
             
-            <h3>A Trivia Game that tests your knowledge of most unimportant topics 😃</h3>
+            <h3 className="subHeading">A Trivia Game that tests your knowledge of most unimportant topics 😃</h3>
 
-			<button>Start Quiz</button>
+			<button className="startBtn">Start Quiz</button>
             
         </div>
     );
