@@ -92,6 +92,10 @@ npm run test
 -   [x] Add appropriate `className`s to elements in the **`App`** component.
 -   [x] Import **`App`** component inside `index.js`.
 
+-   [ ] Add these styles to `index.css`.
+
+-   [ ] Style **`App`** component by editing `App.css`.
+
     Output ->
 
 ### 5. Quiz Component 🧩
