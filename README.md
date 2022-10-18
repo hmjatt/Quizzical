@@ -90,40 +90,7 @@ npm run test
 
 -   [x] Create an **`App`** component and basic JSX elements for it.
 -   [x] Add appropriate `className`s to elements in the **`App`** component.
--   [x] Import **`App`** component inside `index.js`. Code inside `App.js` looks like this ->
-
-    ```javascript
-    import "./styles/App.css";
-
-    function App() {
-        return (
-            <div className="App">
-                <h1 className="heading">Quizzical</h1>
-
-                <h3 className="subHeading">
-                    A Trivia Game that tests your knowledge of most unimportant
-                    topics 😃
-                </h3>
-
-                <button className="startBtn">Start Quiz</button>
-            </div>
-        );
-    }
-
-    export default App;
-    ```
-
--   [ ] Add these styles to `index.css` ->
-
-    ```css
-
-    ```
-
--   [ ] Style **`App`** component by editing `App.css` and add these styles ->
-
-    ```css
-
-    ```
+-   [x] Import **`App`** component inside `index.js`.
 
     Output ->
 
