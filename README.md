@@ -103,17 +103,10 @@ npm run test
 -   [ ] Create a **`Quiz`** component and basic JSX elements for it.
 -   [ ] Add appropriate `className`s to elements in the **`Quiz`** component.
 
-    -   Update code inside `App.js` and it should look like this ->
+    -   Update code inside `App.js`
 
-        ```javascript
+    -   Update Code inside `Quiz.js`
 
-        ```
-
-    -   Code inside `Quiz.js` looks like this ->
-
-    ```javascript
-
-    ```
 
 -   [ ] Style **`Quiz`** component by editing `App.css` and add these styles ->
 
