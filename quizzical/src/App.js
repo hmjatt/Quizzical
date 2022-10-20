@@ -7,12 +7,12 @@ function App() {
         <div className="App">
             <h1 className="heading">Quizzical</h1>
 
-            <h3 className="subHeading">
+            <h3 className="sub-heading">
                 Trivia Game that tests your knowledge of most unimportant topics
                 🤓
             </h3>
 
-            <button className="startBtn">Start Quiz</button>
+            <button className="start-button">Start Quiz</button>
 
             <div className="blobs">
                 <svg

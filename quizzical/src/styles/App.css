@@ -21,7 +21,7 @@ h3 {
 	font-weight: 400;
 }
 
-.startBtn {
+.start-button{
 	font-family: 'Work Sans', sans-serif;
 	background-color: antiquewhite;
 	padding: 1em 4em;
@@ -31,6 +31,12 @@ h3 {
 	font-size: 1em;
 	font-weight: 500;
 	margin: 2em;
+	transition: 0.3s;
+}
+
+.start-button:hover {
+	filter: drop-shadow(0 0 0.55rem #6882d7);
+	background-color: #8fa5ee;
 }
 
 .blob1 {
