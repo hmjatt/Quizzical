@@ -94,7 +94,7 @@ npm run test
 
 -   [x] Add **styles** to `body` inside `index.css`.
 
--   [ ] Style **`App`** component by editing `App.css`.
+-   [x] Style **`App`** component by editing `App.css`. And also add `blob` elements to **`App`** component
 
     Output ->
 

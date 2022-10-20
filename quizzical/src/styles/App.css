@@ -2,6 +2,65 @@
 .App {
 	font-family: 'Work Sans', sans-serif;
 	color: rgb(236, 236, 255);
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
 }
 
+h1 {
+	font-weight: 500;
+	margin-bottom: 0.1em;
+}
+
+h3 {
+	font-weight: 400;
+}
+
+.startBtn {
+	font-family: 'Work Sans', sans-serif;
+	background-color: antiquewhite;
+	padding: 1em 4em;
+	border: none;
+	border-radius: 10px;
+	background-color: #91A3DC;
+	font-size: 1em;
+	font-weight: 500;
+	margin: 2em;
+}
+
+.blob1 {
+	position: absolute;
+	left: -17%;
+	top: 75%;
+	fill: #DBD8B3;
+}
+
+.blob2 {
+	position: absolute;
+	left: 80%;
+	top: -15%;
+	fill: #FCC8B2;
+}
 /* App Component */
+
+
+@media only screen and (max-width: 768px) {
+	/* .App {
+		margin: 0;
+	} */
+
+	.blob1 {
+		left: -47%;
+		top: 75%;
+	}
+	
+	.blob2 {
+		left: 60%;
+		top: -22%;
+	}
+}
