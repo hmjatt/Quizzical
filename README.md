@@ -109,9 +109,14 @@ npm run test
 -   [x] Import **`Footer`** component inside `App` component.
 -   [x] Style **`Footer`** component.
 
-### 7. Conditionally Render Quiz Component 🆗
+### 7. Start Component 🧩
 
--   [ ] When `Start Quiz` button is clicked, change text inside it to `Check Answers` and conditionally render **`Quiz`** component.
+-   [ ] Move contents of **`App`** component into a separate component(except blobs) and show it on initial page load.
+
+
+### 8. Conditionally Render Quiz Component 🆗
+
+-   [ ] When `Start Quiz` button is clicked, conditionally render **`Quiz`** component.
 
 <!--
 
