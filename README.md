@@ -92,7 +92,7 @@ npm run test
 -   [x] Add appropriate `className`s to elements in the **`App`** component.
 -   [x] Import **`App`** component inside `index.js`.
 
--   [ ] Add these styles to `index.css`.
+-   [x] Add **styles** to `body` inside `index.css`.
 
 -   [ ] Style **`App`** component by editing `App.css`.
 
