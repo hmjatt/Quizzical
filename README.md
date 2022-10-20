@@ -97,6 +97,7 @@ npm run test
 -   [x] Style **`App`** component by editing `App.css`. And also add `blob` elements to **`App`** component
 
     Output ->
+	![This is an image](https://github.com/hmjatt/Quizzical/blob/main/project-output/Page1.png)
 
 ### 5. Quiz Component 🧩
 
