@@ -109,23 +109,11 @@ npm run test
 -   [x] Import **`Footer`** component inside `App` component.
 -   [x] Style **`Footer`** component.
 
+### 7. Conditionally Render Quiz Component 🆗
+
+-   [ ] When `Start Quiz` button is clicked, change text inside it to `Check Answers` and conditionally render **`Quiz`** component.
+
 <!--
-
-### 7. Generate Array of 10 Random Numbers 🔃
-
--   [x] Write a `allNewDice` function that returns an array of 10 random numbers between 1-6 inclusive.
--   [x] Log the array of numbers to the console for now.
--   [x] Code for `allNewDice` function inside **`App`** component looks like this :-
-    ```javascript
-    function allNewDice() {
-        const newDice = [];
-        for (let i = 0; i < 10; i++) {
-            newDice.push(Math.ceil(Math.random() * 6));
-        }
-        return newDice;
-    }
-    console.log(allNewDice());
-    ```
 
 ### 8. Replace _Numbers_ with _Dots_ (CSS Challenge) 🔢
 
