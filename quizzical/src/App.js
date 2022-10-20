@@ -1,5 +1,6 @@
 import "./styles/App.css";
 import Quiz from "./components/Quiz";
+import Footer from "./components/Footer";
 
 function App() {
     return (
@@ -38,6 +39,7 @@ function App() {
                 </svg>
             </div>
 			<Quiz />
+			<Footer />
         </div>
     );
 }

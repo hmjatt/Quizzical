@@ -37,17 +37,49 @@ h3 {
 	position: absolute;
 	left: -17%;
 	top: 75%;
-	fill: #DBD8B3;
+	fill: #e7e5ccef;
 }
 
 .blob2 {
 	position: absolute;
 	left: 80%;
 	top: -15%;
-	fill: #FCC8B2;
+	fill: #fbd5c5ef;
 }
 /* App Component */
 
+/* Footer Component */
+footer {
+	position: absolute;
+	text-align: center;
+	font-size: 1em;
+	color: #351600;
+	background-color: aliceblue;
+	border: none;
+	border-radius: 10px;
+	/* margin-top: 2em; */
+	width: 20em;
+	top: 92%;
+}
+
+footer p {
+	padding: 0.7em 0;
+	margin: 0;
+}
+
+footer a {
+	text-decoration: none;
+	color: #3da2e0;
+}
+
+footer a:hover {
+	filter: grayscale(80%);
+}
+
+/* Footer Component */
+
+
+/* Media Queries For Responsiveness */
 
 @media only screen and (max-width: 768px) {
 	/* .App {
