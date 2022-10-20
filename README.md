@@ -101,24 +101,7 @@ npm run test
 
 ### 5. Quiz Component 🧩
 
--   [ ] Create a **`Quiz`** component and basic JSX elements for it.
--   [ ] Add appropriate `className`s to elements in the **`Quiz`** component.
-
-    -   Update code inside `App.js`
-
-    -   Update Code inside `Quiz.js`
-
-
--   [ ] Style **`Quiz`** component by editing `App.css` and add these styles ->
-
-    ```css
-    /* Quiz Component */
-
-    /* Quiz Component */
-    ```
-
-    Output ->
-    <!-- ![This is an image](https://github.com/hmjatt/Tenzies-ReactJS/blob/main/project-output/step-5-before-dots.png) -->
+-   [x] Create a **`Quiz`** component, basic JSX elements for it and import it in **`App`** component.
 
 ### 6. Footer Component 🧩
 

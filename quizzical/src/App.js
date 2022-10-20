@@ -1,4 +1,5 @@
 import "./styles/App.css";
+import Quiz from "./components/Quiz";
 
 function App() {
     return (
@@ -36,6 +37,7 @@ function App() {
                     />
                 </svg>
             </div>
+			<Quiz />
         </div>
     );
 }
