@@ -109,10 +109,6 @@ npm run test
 -   [x] Import **`Footer`** component inside `App` component.
 -   [x] Style **`Footer`** component.
 
-### 7. Start Component 🧩
-
--   [ ] Move contents of **`App`** component into a separate component(except blobs) and show it on initial page load.
-
 
 ### 8. Conditionally Render Quiz Component 🆗
 
