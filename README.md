@@ -110,8 +110,8 @@ npm run test
 -   [x] Style **`Footer`** component.
 
 
-### 8. Conditionally Render Quiz Component 🆗
-
+### 7. Conditionally Render Quiz Component 🆗
+ Replace the content in app.js with questions when button is clicked. That is gameStart is true 
 -   [ ] When `Start Quiz` button is clicked, conditionally render **`Quiz`** component.
 
 <!--
