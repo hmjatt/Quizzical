@@ -1,25 +1,34 @@
 import { useState } from "react";
 import "./styles/App.css";
-import Start from "./components/Start"
 import Quiz from "./components/Quiz";
 import Footer from "./components/Footer";
 
 function App() {
     const [gameStart, setGameStart] = useState(false);
 
-    // Load Quiz component if game has started
+    // Load Quiz component when user clicks `Start Quiz` button
     function startQuiz() {
         setGameStart((prevState) => !prevState);
-		if(gameStart) {
-			<Quiz />
-		} else if(!gameStart) {
-			<Start />
-		}
     }
 
     return (
         <div className="App">
-			
+            {!gameStart && (
+                <main className="welcomePage">
+                    <h1 className="heading">Quizzical</h1>
+
+                    <h3 className="sub-heading">
+                        Trivia Game that tests your knowledge of most
+                        unimportant topics 🤓
+                    </h3>
+
+                    <button className="start-button" onClick={startQuiz}>
+                        Start Quiz
+                    </button>
+                </main>
+            )}
+
+            {gameStart && <Quiz />}
 
             <div className="blobs">
                 <svg
