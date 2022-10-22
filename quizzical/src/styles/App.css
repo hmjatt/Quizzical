@@ -1,7 +1,7 @@
 /* App Component */
 .App {
 	font-family: 'Work Sans', sans-serif;
-	color: rgb(236, 236, 255);
+	color: #ececff;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -21,9 +21,8 @@ h3 {
 	font-weight: 400;
 }
 
-.start-button, .check-answers{
+.start-button, .check-answers {
 	font-family: 'Work Sans', sans-serif;
-	background-color: antiquewhite;
 	padding: 1em 4em;
 	border: none;
 	border-radius: 10px;
@@ -54,6 +53,39 @@ h3 {
 }
 /* App Component */
 
+/* Quiz Component */
+
+h2 {
+	font-weight: 500;
+}
+
+.options button {
+	font-family: 'Work Sans', sans-serif;
+	margin: 0.2em;
+	padding: 0.5em 1.5em;
+	border-radius: 25px;
+	background-color: #16161D;
+	font-weight: 400;
+	color: #ececff;
+	transition: 0.3s;
+	font-size: 1em;
+	border: 1px solid #ececff;
+}
+
+.options button:hover {
+	filter: drop-shadow(0 0 0.55rem #6882d7);
+	background-color: #d6dffd;
+	color: #16161D;
+	border: 1px solid #d6dffd;
+}
+
+hr {
+	border-width: 0 0 1px 0;
+	margin-top: 1.5em;
+}
+
+/* Quiz Component */
+
 /* Footer Component */
 footer {
 	position: absolute;
@@ -63,7 +95,6 @@ footer {
 	background-color: aliceblue;
 	border: none;
 	border-radius: 10px;
-	/* margin-top: 2em; */
 	width: 20em;
 	top: 92%;
 }

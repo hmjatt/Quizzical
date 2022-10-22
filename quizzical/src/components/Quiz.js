@@ -15,6 +15,7 @@ function Quiz() {
                     <button>Option 3</button>
                     <button>Option 4</button>
                 </div>
+				<hr></hr>
                 <h2 className="questions">
                     How would you say goodbye in spanish?
                 </h2>
@@ -24,6 +25,7 @@ function Quiz() {
                     <button>Option 3</button>
                     <button>Option 4</button>
                 </div>
+				<hr></hr>
                 <h2 className="questions">
                     How would you say goodbye in spanish?
                 </h2>
@@ -33,6 +35,7 @@ function Quiz() {
                     <button>Option 3</button>
                     <button>Option 4</button>
                 </div>
+				<hr></hr>
                 <h2 className="questions">
                     How would you say goodbye in spanish?
                 </h2>
@@ -42,6 +45,7 @@ function Quiz() {
                     <button>Option 3</button>
                     <button>Option 4</button>
                 </div>
+				<hr></hr>
                 <h2 className="questions">
                     How would you say goodbye in spanish?
                 </h2>
@@ -51,6 +55,7 @@ function Quiz() {
                     <button>Option 3</button>
                     <button>Option 4</button>
                 </div>
+				<hr></hr>
                 <button className="check-answers">Check Answers</button>
             </div>
         </div>
