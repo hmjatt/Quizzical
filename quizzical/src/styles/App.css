@@ -21,7 +21,7 @@ h3 {
 	font-weight: 400;
 }
 
-.start-button{
+.start-button, .check-answers{
 	font-family: 'Work Sans', sans-serif;
 	background-color: antiquewhite;
 	padding: 1em 4em;
@@ -34,7 +34,7 @@ h3 {
 	transition: 0.3s;
 }
 
-.start-button:hover {
+.start-button:hover, .check-answers:hover {
 	filter: drop-shadow(0 0 0.55rem #6882d7);
 	background-color: #8fa5ee;
 }

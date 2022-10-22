@@ -116,7 +116,7 @@ npm run test
 
 ### 8. Populate Quiz Component 💭
 
--   [ ] Add elements to **`Quiz`** component and style them.
+-   [ ] Add elements to **`Quiz`** component.
 -   [ ] Style elements in **`Quiz`** component.
 
 
