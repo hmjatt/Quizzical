@@ -114,6 +114,12 @@ npm run test
 
 -   [x] When `Start Quiz` button is clicked, conditionally render **`Quiz`** component.
 
+### 8. Populate Quiz Component 💭
+
+-   [ ] Add elements to **`Quiz`** component and style them.
+-   [ ] Style elements in **`Quiz`** component.
+
+
 <!--
 
 ### 8. Replace _Numbers_ with _Dots_ (CSS Challenge) 🔢
