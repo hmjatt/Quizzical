@@ -112,7 +112,7 @@ npm run test
 
 -   [x] When `Start Quiz` button is clicked, conditionally render **`Quiz`** component.
 
-### 8. Populate Quiz Component 💭
+### 8. Add Psuedo Elements to Quiz Component 💭
 
 -   [x] Add elements to **`Quiz`** component.
 -   [x] Style elements in **`Quiz`** component.
