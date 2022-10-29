@@ -119,7 +119,10 @@ npm run test
 -   [x] Add elements to **`Quiz`** component.
 -   [x] Style elements in **`Quiz`** component.
 -   [x] Make it responsive.
--   [ ] Allow multiple selection of **options**.
+
+### 9. Allow multiple selection of **options** ✔️
+
+-   [ ] Change code inside **`Quiz`** component, so that multiple options can be selected for a playthrough but only one option to be selected per question.
 
 <!--
 
