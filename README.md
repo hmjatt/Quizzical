@@ -118,8 +118,8 @@ npm run test
 
 -   [x] Add elements to **`Quiz`** component.
 -   [x] Style elements in **`Quiz`** component.
--   [ ] Make it responsive.
-
+-   [x] Make it responsive.
+-   [ ] Allow multiple selection of **options**.
 
 <!--
 
