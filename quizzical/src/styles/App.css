@@ -40,16 +40,20 @@ h3 {
 
 .blob1 {
 	position: absolute;
-	left: -17%;
+	left: -7%;
 	top: 75%;
 	fill: #e7e5ccef;
+	width: 25em;
+	height: 25em;
 }
 
 .blob2 {
 	position: absolute;
-	left: 80%;
+	left: 90%;
 	top: -15%;
 	fill: #fbd5c5ef;
+	width: 25em;
+	height: 25em;
 }
 /* App Component */
 
@@ -122,18 +126,35 @@ footer a:hover {
 
 /* Media Queries For Responsiveness */
 
+/* @media only screen and (max-width: 1024px) {
+	.blob1 {
+		left: -17%;
+		top: 82%;
+		width: 20em;
+		height: 20em;
+	}
+	
+	.blob2 {
+		left: 79%;
+		top: -10%;
+		width: 20em;
+		height: 20em;
+	}
+}
+
 @media only screen and (max-width: 768px) {
-	/* .App {
-		margin: 0;
-	} */
 
 	.blob1 {
-		left: -47%;
+		left: -37%;
 		top: 75%;
+		width: 20em;
+		height: 20em;
 	}
 	
 	.blob2 {
 		left: 60%;
 		top: -22%;
+		width: 20em;
+		height: 20em;
 	}
-}
+} */
