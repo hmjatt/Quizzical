@@ -34,7 +34,6 @@ Create a Trivia Game using ReactJS
 
 <br>
 
-
 ## Usage 🤓
 
 ```bash
@@ -97,7 +96,7 @@ npm run test
 -   [x] Style **`App`** component by editing `App.css`. And also add `blob` elements to **`App`** component
 
     Output ->
-	![This is an image](https://github.com/hmjatt/Quizzical/blob/main/project-output/Page1.png)
+    ![This is an image](https://github.com/hmjatt/Quizzical/blob/main/project-output/Page1_updated.png)
 
 ### 5. Quiz Component 🧩
 
@@ -108,7 +107,6 @@ npm run test
 -   [x] Create **`Footer`** component and basic JSX elements for it.
 -   [x] Import **`Footer`** component inside `App` component.
 -   [x] Style **`Footer`** component.
-
 
 ### 7. Conditionally Render Quiz Component 🆗
 
@@ -123,6 +121,9 @@ npm run test
 ### 9. Allow multiple selection of **options** ✔️
 
 -   [x] Change code inside **`Quiz`** component, so that multiple options can be selected for a playthrough but only one option to be selected per question. Can be easily done by converting `buttons` to `radio inputs` and applying some styles.
+
+    Output ->
+    ![This is an image](https://github.com/hmjatt/Quizzical/blob/main/project-output/Page2.png)
 
 <!--
 
