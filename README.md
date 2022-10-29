@@ -122,7 +122,7 @@ npm run test
 
 ### 9. Allow multiple selection of **options** ✔️
 
--   [ ] Change code inside **`Quiz`** component, so that multiple options can be selected for a playthrough but only one option to be selected per question.
+-   [x] Change code inside **`Quiz`** component, so that multiple options can be selected for a playthrough but only one option to be selected per question. Can be easily done by converting `buttons` to `radio inputs` and applying some styles.
 
 <!--
 
@@ -804,17 +804,17 @@ npm run test
 
 ### 19. Make App Responsive 📱
 
--   [x] Change _Absolute_ units to _Relative_.
+-   [ ] Change _Absolute_ units to _Relative_.
 
--   [x] Make App responsive for mobile by adding `media query`. :smiley:
+-   [ ] Make App responsive for mobile by adding `media query`. :smiley:
 
 ### 20. Prepare for Deployment 🪢
 
--   [x] Delete **unnecessary** files from directory and format code with `Prettier`.
+-   [ ] Delete **unnecessary** files from directory and format code with `Prettier`.
 
--   [x] Test for _Responsiveness_ and make changes if need be.
+-   [ ] Test for _Responsiveness_ and make changes if need be.
 
--   [x] Add links to `Live Preview` and _screenshots_.
+-   [ ] Add links to `Live Preview` and _screenshots_.
 
 <!--
 

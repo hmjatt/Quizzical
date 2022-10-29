@@ -79,7 +79,11 @@ h2 {
 	text-align: center;
 }
 
-.options button {
+.options {
+	display: flex;
+}
+
+.options label {
 	font-family: 'Work Sans', sans-serif;
 	margin: 0.2em;
 	padding: 0.5em 1.5em;
@@ -92,16 +96,24 @@ h2 {
 	border: 1px solid #ececff;
 }
 
-.options button:hover {
+.options label:hover {
 	filter: drop-shadow(0 0 0.55rem #6882d7);
 	background-color: #d6dffd;
 	color: #16161D;
 	border: 1px solid #d6dffd;
 }
 
-.options button:focus {
+.options input:checked ~label {
+	filter: drop-shadow(0 0 0.55rem #6882d7);
 	background-color: #d6dffd;
+	color: #16161D;
+	border: 1px solid #d6dffd;
 }
+
+input[type="radio"] {
+	display:none;
+}
+
 
 hr {
 	border-width: 0 0 1px 0;
@@ -184,6 +196,15 @@ footer a:hover {
 		margin: 4em 2em 2em 2em;
 	}
 
+	.questions {
+		margin-top: 0;
+	}
+
+	.options {
+		flex-wrap: wrap;
+		height: 12vh;
+	}
+
 	.blob1 {
 		left: -50%;
 		top: 85%;
@@ -203,3 +224,4 @@ footer a:hover {
 	}
 
 }
+
