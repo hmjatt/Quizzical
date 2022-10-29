@@ -21,7 +21,8 @@ h3 {
 	font-weight: 400;
 }
 
-.start-button, .check-answers {
+.start-button,
+.check-answers {
 	font-family: 'Work Sans', sans-serif;
 	padding: 1em 4em;
 	border: none;
@@ -33,18 +34,20 @@ h3 {
 	transition: 0.3s;
 }
 
-.start-button:hover, .check-answers:hover {
+.start-button:hover,
+.check-answers:hover {
 	filter: drop-shadow(0 0 0.55rem #6882d7);
 	background-color: #8fa5ee;
 }
 
 .blob1 {
 	position: absolute;
-	left: -7%;
+	left: -12%;
 	top: 75%;
 	fill: #e7e5ccef;
 	width: 25em;
 	height: 25em;
+	z-index: -1;
 }
 
 .blob2 {
@@ -54,13 +57,26 @@ h3 {
 	fill: #fbd5c5ef;
 	width: 25em;
 	height: 25em;
+	z-index: -1;
 }
+
 /* App Component */
 
 /* Quiz Component */
 
 h2 {
 	font-weight: 500;
+}
+
+.quiz {
+	display: flex;
+	flex-direction: column;
+	min-height: 50vh;
+}
+
+.quiz h1 {
+	margin-bottom: 1.5em;
+	text-align: center;
 }
 
 .options button {
@@ -96,7 +112,7 @@ hr {
 
 /* Footer Component */
 footer {
-	position: absolute;
+	/* position: absolute; */
 	text-align: center;
 	font-size: 1em;
 	color: #351600;
@@ -104,7 +120,7 @@ footer {
 	border: none;
 	border-radius: 10px;
 	width: 20em;
-	top: 92%;
+	/* top: 92%; */
 }
 
 footer p {
@@ -126,35 +142,64 @@ footer a:hover {
 
 /* Media Queries For Responsiveness */
 
-/* @media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
 	.blob1 {
 		left: -17%;
 		top: 82%;
 		width: 20em;
 		height: 20em;
 	}
-	
+
 	.blob2 {
 		left: 79%;
 		top: -10%;
 		width: 20em;
 		height: 20em;
 	}
+	footer {
+		margin-top: 2em;
+	}
 }
 
 @media only screen and (max-width: 768px) {
 
+	.App {
+		height: auto;
+		text-align: left;
+	}
+
+	.welcomePage {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 90vh;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.quiz {
+		font-size: 0.9em;
+		margin: 4em 2em 2em 2em;
+	}
+
 	.blob1 {
-		left: -37%;
-		top: 75%;
+		left: -50%;
+		top: 85%;
 		width: 20em;
 		height: 20em;
 	}
-	
+
 	.blob2 {
-		left: 60%;
-		top: -22%;
+		left: 70%;
+		top: -12%;
 		width: 20em;
 		height: 20em;
 	}
-} */
+
+	footer {
+		margin-bottom: 2em;
+	}
+
+}
