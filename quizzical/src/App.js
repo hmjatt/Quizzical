@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./styles/App.css";
 import Quiz from "./components/Quiz";
 import Footer from "./components/Footer";
@@ -6,17 +6,9 @@ import Footer from "./components/Footer";
 function App() {
     const [gameStart, setGameStart] = useState(false);
 
-	// useEffect hook that fetches data from Trivia API
-	useEffect(() => {
-        fetch("https://opentdb.com/api.php?amount=5&type=multiple")
-            .then((res) => res.json())
-            .then((data) => console.log(data));
-    }, []);
-
     // Load Quiz component when user clicks `Start Quiz` button
     function startQuiz() {
         setGameStart((prevState) => !prevState);
-
     }
 
     return (
