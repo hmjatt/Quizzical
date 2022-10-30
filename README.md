@@ -133,10 +133,11 @@ npm run test
     ![This is an image](https://github.com/hmjatt/Quizzical/blob/main/project-output/Page2.png)
 
 
-### 11. Populate Quiz Component with Data from API 📇
+### 11. Populate Quiz Component with Data from Trivia API 📇
 
--   [ ] Fetch data from `Trivia API`.
--   [ ] Replace psuedo elements with the fetched data.
+-   [x] Fetch data from `Trivia API`.
+-   [ ] Replace psuedo questions with the fetched questions.
+-   [ ] Replace psuedo questions with the fetched questions.
 
 
 ### 12. Make App Responsive 📱
