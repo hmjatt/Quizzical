@@ -6,22 +6,27 @@ function Quiz() {
 	const [questions, setQuestions] = useState([]);
 
 	// State hook for  all the questions
-	const [allQuestions, setAllQuestions] = useState([]);
+	const [triviaData, setTriviaData] = useState([]);
 
     // useEffect hook that fetches data from Trivia API
     useEffect(() => {
         fetch("https://opentdb.com/api.php?amount=5&type=multiple")
             .then((res) => res.json())
-            .then((data) => setAllQuestions(data.results));
+            .then((data) => setTriviaData(data.results));
     }, []);
 
 	// useEffect hook that populates perticular questions using values from fetched data 
-    useEffect(() => {
-        setQuestions(Object.values(allQuestions));
-		// const question_1 = questions[0]["question"];
-    }, [allQuestions]);
+    // useEffect(() => {
+    //     const qa = questions;
 
-	console.log(questions[0]["question"])
+	// 	// console.log(typeof(qa_c))
+	// 	// setQuestions(qa_c)
+	// 	console.log(qa)
+
+	// 	// const question_1 = questions[0]["question"];
+    // }, [questions]);
+
+	console.log(triviaData)
 
 
 
