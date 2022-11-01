@@ -137,7 +137,7 @@ npm run test
 
 -   [x] Fetch data from `Trivia API`.
 -   [ ] Replace psuedo questions with the fetched questions.
--   [ ] Replace psuedo questions with the fetched questions.
+-   [ ] Replace psuedo answers with the fetched answers.
 
 
 ### 12. Make App Responsive 📱
