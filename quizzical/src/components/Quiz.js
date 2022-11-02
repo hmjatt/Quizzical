@@ -1,39 +1,72 @@
 import React, { useState, useEffect } from "react";
+import { nanoid } from "nanoid";
+import axios from "axios";
 
 function Quiz() {
 
-	// State hook for perticular question
-	const [questions, setQuestions] = useState([]);
+    // State hook for perticular question
+    const [questions, setQuestions] = useState([]);
 
-	// State hook for  all the questions
-	const [triviaData, setTriviaData] = useState([]);
+    // State hook for  all the questions
+    const [triviaData, setTriviaData] = useState([]);
 
     // useEffect hook that fetches data from Trivia API
     useEffect(() => {
-        fetch("https://opentdb.com/api.php?amount=5&type=multiple")
-            .then((res) => res.json())
-            .then((data) => setTriviaData(data.results));
+        axios
+            .get("https://opentdb.com/api.php?amount=5&type=multiple")
+            .then(getResult)
     }, []);
 
-	// useEffect hook that populates perticular questions using values from fetched data 
-    // useEffect(() => {
-    //     const qa = questions;
+    function getResult(response) {
+        // Logic to get the result
+        let resultArray = [];
+        response.data.results.map((result) => {
+            return resultArray.push({
+                id: nanoid(),
+                question: result.question,
+                correct_answer: result.correct_answer,
+                answers: result.incorrect_answers.concat(result.correct_answer),
+            });
+        });
+        setQuestions(resultArray);
+    }
 
-	// 	// console.log(typeof(qa_c))
-	// 	// setQuestions(qa_c)
-	// 	console.log(qa)
 
-	// 	// const question_1 = questions[0]["question"];
-    // }, [questions]);
+    const renderElement = questions.map((question) => {
+        return (
+            <div key={question.id}>
+                <h2 className="questions">{question.question}</h2>
+                <div className="options">
+                    {question.answers.map((answer) => {
+                        return (
+                            <div>
+                                <input
+                                    type="radio"
+                                    id={answer}
+                                    name={question.id}
+                                    value={answer}
+                                />
+                                <label htmlFor={answer}>{answer}</label>
+                            </div>
+                        );
+                    })}
+                </div>
+            </div>
+        );
+    });
 
-	console.log(triviaData)
+
+
 
 
 
     return (
         <div className="quiz">
             <h1 className="heading">Quizzical</h1>
-            <h2 className="questions">How would you say goodbye in spanish?</h2>
+            {renderElement}
+
+
+            {/*<h2 className="questions">How would you say goodbye in spanish?</h2>
             <div className="options">
                 <div>
                     <input
@@ -231,7 +264,7 @@ function Quiz() {
                     />
                     <label htmlFor="q5_o4">Option 4</label>
                 </div>
-            </div>
+            </div>*/}
             <hr></hr>
             <button className="check-answers">Check Answers</button>
         </div>
