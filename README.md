@@ -136,17 +136,29 @@ npm run test
 ### 11. Populate Quiz Component with Data from Trivia API 📇
 
 -   [x] Fetch data from `Trivia API`.
--   [ ] Replace psuedo questions with the fetched questions.
--   [ ] Replace psuedo answers with the fetched answers.
+-   [x] Replace psuedo questions with the fetched questions.
+-   [x] Replace psuedo answers with the fetched answers.
+-   [ ] Add loading animation while fetching data.
+-   [ ] Randomize the order of answers.
+
+### 12. Add logics to Quiz Component 🧠
+-  [x] Add logic to check if answer is correct or not.
+-  [x] Save the score in a variable.
+-  [x] Display the score in when the `Submit` button is clicked.
+-  [ ] Replace the `Submit` button with `Play Again` button when the `Submit` button is clicked.
+-  [ ] Change background color if the answer is correct or wrong.
+-  [ ] Render the score component. 
+-  [ ] Add logic to reset the score when the `Play Again` button is clicked.
 
 
-### 12. Make App Responsive 📱
+
+### 13. Make App Responsive 📱
 
 -   [ ] Change _Absolute_ units to _Relative_.
 
 -   [ ] Make App responsive for mobile by adding `media query`. :smiley:
 
-### 13. Prepare for Deployment 🪢
+### 14. Prepare for Deployment 🪢
 
 -   [ ] Delete **unnecessary** files from directory and format code with `Prettier`.
 
@@ -156,7 +168,7 @@ npm run test
 
 
 
-### 14. Deploy 📤
+### 15. Deploy 📤
 
 -   [x] Use Official Documentation([link](https://create-react-app.dev/docs/deployment/#github-pages)) to push the project to **GitHub Pages** 🎆🎆🎆
 
