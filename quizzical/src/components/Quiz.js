@@ -1,6 +1,21 @@
 import React, { useState, useEffect } from "react";
 import { nanoid } from "nanoid";
+import Loading from "./Loading/Loading";
 // import axios from "axios";
+
+//html parser is used to parse the html code in the string and render it as html
+// html parser example
+// import ReactHtmlParser from "react-html-parser";
+// ReactHtmlParser(htmlString);
+// const htmlString = "<p>hello world</p>";
+// console.log(ReactHtmlParser(htmlString)); //output: hello world
+
+//OR alternative to html parser is .replace() method
+//like this
+// const htmlString = "<p>hello world</p>";
+// const htmlStringWithoutTags = htmlString.replace(/<[^>]*>?/gm, "");
+// console.log(htmlStringWithoutTags);  //output: hello world
+
 
 function Quiz() {
 
@@ -33,6 +48,11 @@ function Quiz() {
     //     setQuestions(resultArray);
     // }
 
+    // uAdd loading before the data is fetched
+   
+
+   
+
 
 
     // The difference between axios and fetch is that axios is a promise based library and fetch is not.
@@ -41,7 +61,7 @@ function Quiz() {
     // naoid is a library that generates unique id for each question. we use to uniquely identify each question.
     //alternative to nanoid is uuid
     //we can use index as id but it is not a good practice
-    
+
         useEffect(() => {
         fetch("https://opentdb.com/api.php?amount=5&type=multiple")
             .then((response) => response.json())
@@ -60,6 +80,11 @@ function Quiz() {
             });
     }, []);
 
+
+    // While the data is being fetched, we show a loading component
+    if (questions.length === 0) {
+        return <Loading />;
+    }
 
     const renderElement = questions.map((question) => {
         return (
