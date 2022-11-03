@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { nanoid } from "nanoid";
-import axios from "axios";
+// import axios from "axios";
 
 function Quiz() {
 
@@ -10,26 +10,55 @@ function Quiz() {
     // State hook for  all the questions
     const [triviaData, setTriviaData] = useState([]);
 
-    // useEffect hook that fetches data from Trivia API
-    useEffect(() => {
-        axios
-            .get("https://opentdb.com/api.php?amount=5&type=multiple")
-            .then(getResult)
-    }, []);
 
-    function getResult(response) {
-        // Logic to get the result
-        let resultArray = [];
-        response.data.results.map((result) => {
-            return resultArray.push({
-                id: nanoid(),
-                question: result.question,
-                correct_answer: result.correct_answer,
-                answers: result.incorrect_answers.concat(result.correct_answer),
+    // useEffect hook that fetches data from Trivia API
+    // useEffect(() => {
+    //     axios
+    //         .get("https://opentdb.com/api.php?amount=5&type=multiple")
+    //         .then(getResult)
+    // }, []);
+
+    // function getResult(response) {
+    //     // Logic to get the result
+    //     let resultArray = [];
+    //     response.data.results.map((result) => {
+    //         return resultArray.push({
+    //             id: nanoid(),
+    //             question: result.question,
+    //             correct_answer: result.correct_answer,
+    //             answers: result.incorrect_answers.concat(result.correct_answer),
+    //             selectedAnswer: "",
+    //         });
+    //     });
+    //     setQuestions(resultArray);
+    // }
+
+
+
+    // The difference between axios and fetch is that axios is a promise based library and fetch is not.
+    // So, we can use async await with fetch but not with axios.
+
+    // naoid is a library that generates unique id for each question. we use to uniquely identify each question.
+    //alternative to nanoid is uuid
+    //we can use index as id but it is not a good practice
+    
+        useEffect(() => {
+        fetch("https://opentdb.com/api.php?amount=5&type=multiple")
+            .then((response) => response.json())
+            .then((data) => {
+                let resultArray = [];
+                data.results.map((result) => {
+                    return resultArray.push({
+                        id: nanoid(),
+                        question: result.question,
+                        correct_answer: result.correct_answer,
+                        answers: result.incorrect_answers.concat(result.correct_answer),
+                        selectedAnswer: "",
+                    });
+                });
+                setQuestions(resultArray);
             });
-        });
-        setQuestions(resultArray);
-    }
+    }, []);
 
 
     const renderElement = questions.map((question) => {
@@ -39,12 +68,13 @@ function Quiz() {
                 <div className="options">
                     {question.answers.map((answer) => {
                         return (
-                            <div>
+                            <div >
                                 <input
                                     type="radio"
                                     id={answer}
                                     name={question.id}
                                     value={answer}
+                                    onChange={handleSubmit}
                                 />
                                 <label htmlFor={answer}>{answer}</label>
                             </div>
@@ -55,220 +85,52 @@ function Quiz() {
         );
     });
 
+// Function to handle the submit event of the input
+    function handleSubmit(event) {
+        const { name, value } = event.target;
+        const updatedQuestions = questions.map((question) => {
+            if (question.id === name) {
+                question.selectedAnswer = value;
+            }
+            return question;
+        });
+        setQuestions(updatedQuestions);
+    }
 
-
-
-
+    // Check the answer and display the result
+    function checkAnswer() {
+        let correctAnswers = 0;
+        questions.map((question) => {
+            if (question.selectedAnswer === question.correct_answer) {
+                correctAnswers++;
+            }
+            return correctAnswers;
+        });
+        setTriviaData(correctAnswers);
+    }
 
     return (
         <div className="quiz">
             <h1 className="heading">Quizzical</h1>
             {renderElement}
-
-
-            {/*<h2 className="questions">How would you say goodbye in spanish?</h2>
-            <div className="options">
-                <div>
-                    <input
-                        type="radio"
-                        name="question_1"
-                        id="q1_o1"
-                        value="Option 1"
-                    />
-                    <label htmlFor="q1_o1">Option 1</label>
-                </div>
-                <div>
-                    <input
-                        type="radio"
-                        name="question_1"
-                        id="q1_o2"
-                        value="Option 2"
-                    />
-                    <label htmlFor="q1_o2">Option 2</label>
-                </div>
-                <div>
-                    <input
-                        type="radio"
-                        name="question_1"
-                        id="q1_o3"
-                        value="Option 3"
-                    />
-                    <label htmlFor="q1_o3">Option 3</label>
-                </div>
-                <div>
-                    <input
-                        type="radio"
-                        name="question_1"
-                        id="q1_o4"
-                        value="Option 4"
-                    />
-                    <label htmlFor="q1_o4">Option 4</label>
-                </div>
-            </div>
             <hr></hr>
-            <h2 className="questions">How would you say goodbye in spanish?</h2>
-            <div className="options">
-                <div>
-                    <input
-                        type="radio"
-                        name="question_2"
-                        id="q2_o1"
-                        value="Option 1"
-                    />
-                    <label htmlFor="q2_o1">Option 1</label>
-                </div>
-                <div>
-                    <input
-                        type="radio"
-                        name="question_2"
-                        id="q2_o2"
-                        value="Option 2"
-                    />
-                    <label htmlFor="q2_o2">Option 2</label>
-                </div>
-                <div>
-                    <input
-                        type="radio"
-                        name="question_2"
-                        id="q2_o3"
-                        value="Option 3"
-                    />
-                    <label htmlFor="q2_o3">Option 3</label>
-                </div>
-                <div>
-                    <input
-                        type="radio"
-                        name="question_2"
-                        id="q2_o4"
-                        value="Option 4"
-                    />
-                    <label htmlFor="q2_o4">Option 4</label>
-                </div>
-            </div>
-            <hr></hr>
-            <h2 className="questions">How would you say goodbye in spanish?</h2>
-            <div className="options">
-                <div>
-                    <input
-                        type="radio"
-                        name="question_3"
-                        id="q3_o1"
-                        value="Option 1"
-                    />
-                    <label htmlFor="q3_o1">Option 1</label>
-                </div>
-                <div>
-                    <input
-                        type="radio"
-                        name="question_3"
-                        id="q3_o2"
-                        value="Option 2"
-                    />
-                    <label htmlFor="q3_o2">Option 2</label>
-                </div>
-                <div>
-                    <input
-                        type="radio"
-                        name="question_3"
-                        id="q3_o3"
-                        value="Option 3"
-                    />
-                    <label htmlFor="q3_o3">Option 3</label>
-                </div>
-                <div>
-                    <input
-                        type="radio"
-                        name="question_3"
-                        id="q3_o4"
-                        value="Option 4"
-                    />
-                    <label htmlFor="q3_o4">Option 4</label>
-                </div>
-            </div>
-            <hr></hr>
-            <h2 className="questions">How would you say goodbye in spanish?</h2>
-            <div className="options">
-                <div>
-                    <input
-                        type="radio"
-                        name="question_4"
-                        id="q4_o1"
-                        value="Option 1"
-                    />
-                    <label htmlFor="q4_o1">Option 1</label>
-                </div>
-                <div>
-                    <input
-                        type="radio"
-                        name="question_4"
-                        id="q4_o2"
-                        value="Option 2"
-                    />
-                    <label htmlFor="q4_o2">Option 2</label>
-                </div>
-                <div>
-                    <input
-                        type="radio"
-                        name="question_4"
-                        id="q4_o3"
-                        value="Option 3"
-                    />
-                    <label htmlFor="q4_o3">Option 3</label>
-                </div>
-                <div>
-                    <input
-                        type="radio"
-                        name="question_4"
-                        id="q4_o4"
-                        value="Option 4"
-                    />
-                    <label htmlFor="q4_o4">Option 4</label>
-                </div>
-            </div>
-            <hr></hr>
-            <h2 className="questions">How would you say goodbye in spanish?</h2>
-            <div className="options">
-                <div>
-                    <input
-                        type="radio"
-                        name="question_5"
-                        id="q5_o1"
-                        value="Option 1"
-                    />
-                    <label htmlFor="q5_o1">Option 1</label>
-                </div>
-                <div>
-                    <input
-                        type="radio"
-                        name="question_5"
-                        id="q5_o2"
-                        value="Option 2"
-                    />
-                    <label htmlFor="q5_o2">Option 2</label>
-                </div>
-                <div>
-                    <input
-                        type="radio"
-                        name="question_5"
-                        id="q5_o3"
-                        value="Option 3"
-                    />
-                    <label htmlFor="q5_o3">Option 3</label>
-                </div>
-                <div>
-                    <input
-                        type="radio"
-                        name="question_5"
-                        id="q5_o4"
-                        value="Option 4"
-                    />
-                    <label htmlFor="q5_o4">Option 4</label>
-                </div>
-            </div>*/}
-            <hr></hr>
-            <button className="check-answers">Check Answers</button>
+            <p>{`You got ${triviaData} out of ${questions.length} correct!`}</p>
+            <button className="check-answers"
+                onClick={checkAnswer}
+            >Check Answers</button>
+            <p>You got socres out of {questions.length} correct</p>
         </div>
     );
 }
 
 export default Quiz;
+
+//TODO:
+// ### 12. Add logics to Quiz Component 🧠
+// -  [x] Add logic to check if answer is correct or not.
+// -  [x] Save the score in a variable.
+// -  [x] Display the score in when the `Submit` button is clicked.
+// -  [ ] Replace the `Submit` button with `Play Again` button when the `Submit` button is clicked.
+// -  [ ] Change background color if the answer is correct or wrong.
+// -  [ ] Render the score component. 
+// -  [ ] Add logic to reset the score when the `Play Again` button is clicked.
