@@ -138,17 +138,17 @@ npm run test
 -   [x] Fetch data from `Trivia API`.
 -   [x] Replace psuedo questions with the fetched questions.
 -   [x] Replace psuedo answers with the fetched answers.
--   [ ] Add loading animation while fetching data.
+-   [x] Add loading animation while fetching data.
 -   [ ] Randomize the order of answers.
 
 ### 12. Add logics to Quiz Component 🧠
 -  [x] Add logic to check if answer is correct or not.
 -  [x] Save the score in a variable.
 -  [x] Display the score in when the `Submit` button is clicked.
--  [ ] Replace the `Submit` button with `Play Again` button when the `Submit` button is clicked.
--  [ ] Change background color if the answer is correct or wrong.
--  [ ] Render the score component. 
--  [ ] Add logic to reset the score when the `Play Again` button is clicked.
+-  [x] Replace the `Submit` button with `Play Again` button when the `Submit` button is clicked.
+-  [x] Change background color if the answer is correct or wrong.
+-  [x] Render the score component. 
+-  [x] Add logic to reset the score when the `Play Again` button is clicked.
 
 
 
