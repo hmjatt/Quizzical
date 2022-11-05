@@ -1,11 +1,10 @@
-import React, {useState, useEffect} from "react";
-import {nanoid} from "nanoid";
+import React, { useState, useEffect } from "react";
+import { nanoid } from "nanoid";
 import Loading from "./Loading/Loading";
 // import axios from "axios";
 import parse from "html-react-parser";
-import useWindowSize from 'react-use/lib/useWindowSize'
+// import useWindowSize from 'react-use/lib/useWindowSize'
 import Confetti from "react-confetti";
-
 
 //html parser is used to parse the html code in the string and render it as html
 // html parser example
@@ -20,9 +19,7 @@ import Confetti from "react-confetti";
 // const htmlStringWithoutTags = htmlString.replace(/<[^>]*>?/gm, "");
 // console.log(htmlStringWithoutTags);  //output: hello world
 
-
 function Quiz() {
-
     /*****************  USE-STATE VARIABLES  *****************/
     // State hook for perticular question
     const [questions, setQuestions] = useState([]);
@@ -66,9 +63,40 @@ function Quiz() {
     //alternative to nanoid is uuid
     //we can use index as id but it is not a good practice
 
+    /*********************** useWindowSize hook ***********************************/
+    // useWindowSize Hook from https://usehooks.com/useWindowSize/
+    function useWindowSize() {
+        // Initialize state with undefined width/height so server and client renders match
+        // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
+        const [windowSize, setWindowSize] = useState({
+            width: undefined,
+            height: undefined,
+        });
+        useEffect(() => {
+            // Handler to call on window resize
+            function handleResize() {
+                // Set window width/height to state
+                setWindowSize({
+                    width: window.innerWidth,
+                    height: window.innerHeight,
+                });
+            }
+            // Add event listener
+            window.addEventListener("resize", handleResize);
+            // Call handler right away so state gets updated with initial window size
+            handleResize();
+            // Remove event listener on cleanup
+            return () => window.removeEventListener("resize", handleResize);
+        }, []); // Empty array ensures that effect is only run on mount
+        return windowSize;
+    }
+    /*********************** useWindowSize hook ***********************************/
+
     /*********************** Confetti section ***********************************/
-    const { width, height } = useWindowSize()
-    const confetti = triviaData === 5 && <Confetti width={width} height={height}/>;
+    const { width, height } = useWindowSize();
+    const confetti = triviaData === 5 && (
+        <Confetti width={width} height={height} />
+    );
     /*********************** Confetti section ***********************************/
 
     /*********************** API call section ***********************************/
@@ -82,9 +110,10 @@ function Quiz() {
                         id: nanoid(),
                         question: result.question,
                         correct_answer: result.correct_answer,
-                        answers: result.incorrect_answers.concat(result.correct_answer), /*.sort(() => Math.random() - 0.5),*/ /* Randomize the answers */
+                        answers: result.incorrect_answers.concat(
+                            result.correct_answer
+                        ) /*.sort(() => Math.random() - 0.5),*/ /* Randomize the answers */,
                         selectedAnswer: "",
-
                     });
                 });
                 setQuestions(resultArray);
@@ -95,13 +124,12 @@ function Quiz() {
     // While the data is being fetched, we show a loading component
     /*********************** Loading section ***********************************/
     if (questions.length === 0) {
-        return <Loading/>;
+        return <Loading />;
     }
     /*********************** Loading section ***********************************/
 
     /*********************** Render Question and Answer section ***********************************/
     const renderElement = questions.map((question) => {
-
         return (
             <div key={question.id}>
                 <h2 className="questions">{parse(question.question)}</h2>
@@ -117,9 +145,15 @@ function Quiz() {
                                     onChange={handleSubmit}
                                     disabled={showResult}
                                 />
-                                    <label
-                                        className={`label ${selectedAnswerClass(answer, question)}`}
-                                    htmlFor={answer}>{parse(answer)}</label>
+                                <label
+                                    className={`label ${selectedAnswerClass(
+                                        answer,
+                                        question
+                                    )}`}
+                                    htmlFor={answer}
+                                >
+                                    {parse(answer)}
+                                </label>
                             </div>
                         );
                     })}
@@ -131,7 +165,7 @@ function Quiz() {
 
     /*********************** Submit Answer section ***********************************/
     function handleSubmit(event) {
-        const {name, value} = event.target;
+        const { name, value } = event.target;
         const updatedQuestions = questions.map((question) => {
             if (question.id === name) {
                 question.selectedAnswer = value;
@@ -141,7 +175,6 @@ function Quiz() {
         setQuestions(updatedQuestions);
     }
     /*********************** Submit Answer section ***********************************/
-
 
     /*********************** Check Answer section ***********************************/
     function checkAnswer() {
@@ -166,20 +199,17 @@ function Quiz() {
                 return "incorrect";
             }
         }
-
     }
     /*********************** Selected Answer ***********************************/
-
 
     /*********************** Reset section ***********************************/
     function hanleReset() {
         setShowResult(false);
         setTriviaData(0);
         setQuestions([]);
-        setReset(prevState => prevState + 1);
+        setReset((prevState) => prevState + 1);
     }
     /*********************** Reset section ***********************************/
-
 
     /*********************** Render Main Quiz section ***********************************/
     return (
@@ -192,16 +222,30 @@ function Quiz() {
                     <hr></hr>
                     <div className={"result-section"}>
                         {/*if triviaData is equal to 5 then show the confetti*/}
-                        {showResult &&
+                        {showResult && (
                             //if triviaData is equal to 5 then glow the button
-                            <p className={`
+                            <p
+                                className={`
                             ${triviaData !== 5 ? "result" : "result-winner"}
-                            `}>{ triviaData !== 5 ? `You got ${triviaData} out of 5` : "You are a Genius!"}</p>
-                        }
+                            `}
+                            >
+                                {triviaData !== 5
+                                    ? `You got ${triviaData} out of 5`
+                                    : "You are a Genius!"}
+                            </p>
+                        )}
                         {!showResult ? (
-                                <button className="check-answers" onClick={checkAnswer}>Check Answers</button>
+                            <button
+                                className="check-answers"
+                                onClick={checkAnswer}
+                            >
+                                Check Answers
+                            </button>
                         ) : (
-                            <button className="check-answers" onClick={hanleReset}>
+                            <button
+                                className="check-answers"
+                                onClick={hanleReset}
+                            >
                                 Play Again
                             </button>
                         )}
