@@ -127,7 +127,7 @@ npm run test
 
 ### 10. Give credit where it's due 🤝
 
--   [ ] Add link to `Habib ur rehman Bhatti`'s [GitHub](https://github.com/HabibUrRehmanBhattii) in footer as he finished points `#11` and `#12`. Thanks friend 😄 and looking forward to colaborate with you in future projects, learned a lot while doing this project.
+-   [x] Add link to `Habib ur rehman Bhatti`'s [GitHub](https://github.com/HabibUrRehmanBhattii) in footer as he finished points `#11` and `#12`. Thanks friend 😄 and looking forward to colaborate with you in future projects, learned a lot while doing this project.
 
 ### 11. Populate Quiz Component with Data from Trivia API 📇
 
