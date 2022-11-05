@@ -125,13 +125,9 @@ npm run test
     Output ->
     ![This is an image](https://github.com/hmjatt/Quizzical/blob/main/project-output/Page2.png)
 
-### 10. Allow multiple selection of **options** ✔️
+### 9. Give credit where it's due 🤝
 
--   [x] Change code inside **`Quiz`** component, so that multiple options can be selected for a playthrough but only one option to be selected per question. Can be easily done by converting `buttons` to `radio inputs` and applying some styles.
-
-    Output ->
-    ![This is an image](https://github.com/hmjatt/Quizzical/blob/main/project-output/Page2.png)
-
+-   [ ] Add link to `Habib ur rehman Bhatti`'s [GitHub](https://github.com/HabibUrRehmanBhattii)in footer as he finished points `11` and `12`. Thanks friend 😄 and looking forward to colaborate with you in future projects, learned a lot while doing this project.
 
 ### 11. Populate Quiz Component with Data from Trivia API 📇
 
@@ -139,34 +135,28 @@ npm run test
 -   [x] Replace psuedo questions with the fetched questions.
 -   [x] Replace psuedo answers with the fetched answers.
 -   [x] Add loading animation while fetching data.
--   [ ] Randomize the order of answers.
+-   [x] Randomize the order of answers.
 
 ### 12. Add logics to Quiz Component 🧠
--  [x] Add logic to check if answer is correct or not.
--  [x] Save the score in a variable.
--  [x] Display the score in when the `Submit` button is clicked.
--  [x] Replace the `Submit` button with `Play Again` button when the `Submit` button is clicked.
--  [x] Change background color if the answer is correct or wrong.
--  [x] Render the score component. 
--  [x] Add logic to reset the score when the `Play Again` button is clicked.
 
-
+-   [x] Add logic to check if answer is correct or not.
+-   [x] Save the score in a variable.
+-   [x] Display the score in when the `Submit` button is clicked.
+-   [x] Replace the `Submit` button with `Play Again` button when the `Submit` button is clicked.
+-   [x] Change background color if the answer is correct or wrong.
+-   [x] Render the score component.
+-   [x] Add logic to reset the score when the `Play Again` button is clicked.
 
 ### 13. Make App Responsive 📱
 
 -   [ ] Change _Absolute_ units to _Relative_.
-
 -   [ ] Make App responsive for mobile by adding `media query`. :smiley:
 
 ### 14. Prepare for Deployment 🪢
 
 -   [ ] Delete **unnecessary** files from directory and format code with `Prettier`.
-
 -   [ ] Test for _Responsiveness_ and make changes if need be.
-
 -   [ ] Add links to `Live Preview` and _screenshots_.
-
-
 
 ### 15. Deploy 📤
 
@@ -179,10 +169,7 @@ npm run test
 -   [ ] Allow players to select category of trivia questions.
 -   [ ] Allow players to select difficulty of trivia questions.
 
-
 <br>
-
-
 
 ## Links to content that helped me with this project 🔗
 
@@ -194,7 +181,7 @@ npm run test
 
 2. Figma Design
 
-    - [Tenzies](https://www.figma.com/file/E9S5iPcm10f0RIHK8mCqKL/Quizzical-App?node-id=0%3A1)
+    - [Quizzical](https://www.figma.com/file/E9S5iPcm10f0RIHK8mCqKL/Quizzical-App?node-id=0%3A1)
 
 3. Scrimba
 

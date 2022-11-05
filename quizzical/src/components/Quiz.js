@@ -112,7 +112,7 @@ function Quiz() {
                         correct_answer: result.correct_answer,
                         answers: result.incorrect_answers.concat(
                             result.correct_answer
-                        ) /*.sort(() => Math.random() - 0.5),*/ /* Randomize the answers */,
+                        ).sort(() => Math.random() - 0.5), /* Randomize the answers */
                         selectedAnswer: "",
                     });
                 });
@@ -203,7 +203,7 @@ function Quiz() {
     /*********************** Selected Answer ***********************************/
 
     /*********************** Reset section ***********************************/
-    function hanleReset() {
+    function handleReset() {
         setShowResult(false);
         setTriviaData(0);
         setQuestions([]);
@@ -244,7 +244,7 @@ function Quiz() {
                         ) : (
                             <button
                                 className="check-answers"
-                                onClick={hanleReset}
+                                onClick={handleReset}
                             >
                                 Play Again
                             </button>
