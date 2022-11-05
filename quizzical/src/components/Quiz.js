@@ -82,7 +82,7 @@ function Quiz() {
                         id: nanoid(),
                         question: result.question,
                         correct_answer: result.correct_answer,
-                        answers: result.incorrect_answers.concat(result.correct_answer).sort(() => Math.random() - 0.5), /* Randomize the answers */
+                        answers: result.incorrect_answers.concat(result.correct_answer), /*.sort(() => Math.random() - 0.5),*/ /* Randomize the answers */
                         selectedAnswer: "",
 
                     });
@@ -218,17 +218,18 @@ export default Quiz;
 /*
 //TODO:
 // ### 12. Add logics to Quiz Component 🧠
-// -  [x] Add logic to check if answer is correct or not.
-// -  [x] Save the score in a variable.
-// -  [x] Display the score on the screen.
-// -  [x] Add parse to parse the html code in the string and render it as html
-// -  [x] Display the score in when the `Submit` button is clicked.
-// -  [x] Replace the `Submit` button with `Play Again` button when the `Submit` button is clicked.
-// -  [x] Add a Glow and confetti if the score is 5.
-// -  [x] Render the score component.
-// -  [x] Add logic to reset the score when the `Play Again` button is clicked.
-// -  [x] When check Answer is clicked, disable the radio button.
-// -  [x] When check Answer is clicked, show the correct answer.
-// -  [x] When check Answer is clicked, if the answer is incorrect change the color of the label to red.
-// -  [x] Randomize the answers.
+ -  [x] Add logic to check if answer is correct or not.
+ -  [x] Save the score in a variable.
+ -  [x] Display the score on the screen.
+ -  [x] Add parse to parse the html code in the string and render it as html
+ -  [x] Display the score in when the `Submit` button is clicked.
+ -  [x] Replace the `Submit` button with `Play Again` button when the `Submit` button is clicked.
+ -  [x] Add a Glow and confetti if the score is 5.
+ -  [x] Render the score component.
+ -  [x] Add logic to reset the score when the `Play Again` button is clicked.
+ -  [x] When check Answer is clicked, disable the radio button.
+ -  [x] When check Answer is clicked, show the correct answer.
+ -  [x] When check Answer is clicked, if the answer is incorrect change the color of the label to red.
+ -  [x] Randomize the answers.
+ -  [x] Add loading when the data is being fetched.
 */
