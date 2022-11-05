@@ -2,10 +2,10 @@ import "./Loading.css";
 
 export default function Loading() {
     return (
-        <div class="container">
-        <div class="ring"></div>
-        <div class="ring"></div>
-        <div class="ring"></div>
+        <div className="container">
+        <div className="ring"></div>
+        <div className="ring"></div>
+        <div className="ring"></div>
     </div>
     )
     }

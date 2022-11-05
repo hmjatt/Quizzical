@@ -212,7 +212,7 @@ footer {
 	position: absolute;
 	bottom: 0;
 	width: 20em;
-	height: 2.5em;
+	/* height: 2.5em; */
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -233,15 +233,20 @@ footer {
 	border-radius: 10px;
 	width: 20em;*/
 
+footer div {
+	display: flex;
+	flex-direction: column;
+}
 
 footer p {
-	padding: 0.7em 0;
+	padding: 0.2em 0;
 	margin: 0;
 }
 
 footer a {
 	text-decoration: none;
 	color: #3da2e0;
+	padding: 0.2em 0;
 }
 
 footer a:hover {
