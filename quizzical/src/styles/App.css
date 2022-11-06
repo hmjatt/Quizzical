@@ -244,7 +244,6 @@ footer p {
 
 footer a {
 	text-decoration: none;
-	color: #3da2e0;
 	padding: 0.2em 0;
 }
 
@@ -362,18 +361,19 @@ footer a:hover {
 
 	footer {
 		position: fixed;
-
 	}
-
 }
 
 @media only screen and (max-width: 390px) {
 	.quiz-main {
-		height: 227vh;
 		top: 105%;
 	}
 
 	.quiz h2 {
 		margin-bottom: 0;
+	}
+
+	footer {
+		position: fixed;
 	}
 }

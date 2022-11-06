@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./styles/App.css";
 import Quiz from "./components/Quiz";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 
 function App() {
     const [gameStart, setGameStart] = useState(false);

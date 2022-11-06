@@ -1,7 +1,14 @@
-* {
-    box-sizing: border-box;
+@-webkit-keyframes slider {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
 }
-@-webkit-keyframes ticker {
+@keyframes slider {
     0% {
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
@@ -12,28 +19,16 @@
         transform: translate3d(-100%, 0, 0);
     }
 }
-@keyframes ticker {
-    0% {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-        visibility: visible;
-    }
-    100% {
-        -webkit-transform: translate3d(-100%, 0, 0);
-        transform: translate3d(-100%, 0, 0);
-    }
-}
-.wraper {
+.wrapers {
     position: fixed;
     bottom: 0;
     width: 100%;
     overflow: hidden;
     height: 4rem;
-    background-color: rgba(0, 0, 0, 0.9);
     padding-left: 100%;
     box-sizing: content-box;
 }
-.wraper .ticker {
+.wrapers .slider {
     display: inline-block;
     height: 4rem;
     line-height: 4rem;
@@ -44,20 +39,53 @@
     animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
-    -webkit-animation-name: ticker;
-    animation-name: ticker;
+    -webkit-animation-name: slider;
+    animation-name: slider;
     -webkit-animation-duration: 30s;
     animation-duration: 30s;
 }
-.wraper .ticker__item {
+.wrapers .wraper__item {
     display: inline-block;
     padding: 0 2rem;
     font-size: 2rem;
     color: white;
 }
-body {
-    padding-bottom: 5rem;
+
+@media screen and (max-width: 768px) {
+    .wrapers {
+        height: 3rem;
+    }
+    .wrapers .slider {
+        height: 3rem;
+        line-height: 3rem;
+    }
+    .wrapers .wraper__item {
+        font-size: 1.5rem;
+    }
 }
-h1, h2, p {
-    padding: 0 5%;
+
+@media screen and (max-width: 480px) {
+    .wrapers {
+        height: 2rem;
+    }
+    .wrapers .slider {
+        height: 2rem;
+        line-height: 2rem;
+    }
+    .wrapers .wraper__item {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .wrapers {
+        height: 1.5rem;
+    }
+    .wrapers .slider {
+        height: 1.5rem;
+        line-height: 1.5rem;
+    }
+    .wrapers .wraper__item {
+        font-size: 0.8rem;
+    }
 }
