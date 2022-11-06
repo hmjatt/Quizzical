@@ -149,8 +149,8 @@ npm run test
 
 ### 13. Make App Responsive 📱
 
--   [ ] Change _Absolute_ units to _Relative_.
--   [ ] Make App responsive for mobile by adding `media query`. :smiley:
+-   [x] Change _Absolute_ units to _Relative_.
+-   [x] Make App responsive for mobile by adding `media query`. :smiley:
 
 ### 14. Prepare for Deployment 🪢
 
@@ -160,7 +160,7 @@ npm run test
 
 ### 15. Deploy 📤
 
--   [x] Use Official Documentation([link](https://create-react-app.dev/docs/deployment/#github-pages)) to push the project to **GitHub Pages** 🎆🎆🎆
+-   [ ] Use Official Documentation([link](https://create-react-app.dev/docs/deployment/#github-pages)) to push the project to **GitHub Pages** 🎆🎆🎆
 
 <br>
 
@@ -168,6 +168,9 @@ npm run test
 
 -   [ ] Allow players to select category of trivia questions.
 -   [ ] Allow players to select difficulty of trivia questions.
+-   [ ] Divide Quiz Component into smaller components.
+-   [ ] Use Styled Components and CSS Modules to tidy up CSS.
+
 
 <br>
 
