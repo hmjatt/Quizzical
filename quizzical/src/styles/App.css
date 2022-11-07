@@ -307,7 +307,7 @@ footer a:hover {
 
 	.App {
 		overflow: visible;
-
+		
 	}
 
 	.welcomePage {
@@ -322,15 +322,13 @@ footer a:hover {
 
 	.quiz-main {
 		width: 100vw;
-		height: 177vh;
-		top: 85%;
+		height: 197vh;
+		top: 97%;
 	}
 
 	.quiz {
 		font-size: 0.9em;
 		margin: 4em 2em 2em 2em;
-
-
 	}
 
 	.questions {
@@ -342,6 +340,17 @@ footer a:hover {
 	.options {
 		flex-wrap: wrap;
 
+	}
+
+	.result-section {
+		gap: 0;
+		text-align: center;
+	}
+
+	.check-answers {
+		padding: 1em 2.5em;
+		font-size: 1.2em;
+		margin: 1em;
 	}
 
 
@@ -365,9 +374,6 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 390px) {
-	.quiz-main {
-		top: 105%;
-	}
 
 	.quiz h2 {
 		margin-bottom: 0;
