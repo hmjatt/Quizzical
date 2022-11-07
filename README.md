@@ -9,7 +9,7 @@ Create a Trivia Game using ReactJS
 
 <br>
 
-![This is an image](https://github.com/hmjatt/Quizzical/blob/main/project-output/ezgif.com-gif-maker17089e18894031c8.png)
+![This is an image](https://github.com/hmjatt/Quizzical/blob/main/project-output/ezgif.com-gif-maker17089e18894031c8.gif)
 
 ## About ℹ️
 
