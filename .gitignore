@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+.idea/modules.xml
+.idea/Quizzical-1.iml
+.idea/vcs.xml
+.idea/.gitignore
