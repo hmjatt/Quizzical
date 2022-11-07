@@ -5,9 +5,11 @@ Create a Trivia Game using ReactJS
 <!--
 ## [Live Preview]()
 -->
-![This is an image](https://github.com/hmjatt/Quizzical/blob/main/project-output/Results_mobile.png)
+![This is an image](https://github.com/hmjatt/Quizzical/blob/main/project-output/mobile.png)
+
 <br>
-![This is an image](https://github.com/hmjatt/Quizzical/blob/main/project-output/Results_desk.png)
+
+![This is an image](https://s1.gifyu.com/images/ezgif.com-gif-maker17089e18894031c8.gif)
 
 
 
@@ -150,7 +152,7 @@ npm run test
 -   [x] Add logic to reset the score when the `Play Again` button is clicked.
 
     Output ->
-    ![This is an image](https://github.com/hmjatt/Quizzical/blob/main/project-output/Results_desk.png)
+    ![This is an image](https://github.com/hmjatt/Quizzical/blob/main/project-output/results.png)
 
 ### 13. Make App Responsive 📱
 
