@@ -5,9 +5,10 @@ Create a Trivia Game using ReactJS
 <!--
 ## [Live Preview]()
 -->
-
-![This is an image](https://github.com/hmjatt/Quizzical/blob/main/project-output/Results_desk.png)
 ![This is an image](https://github.com/hmjatt/Quizzical/blob/main/project-output/Results_mobile.png)
+<br>
+![This is an image](https://github.com/hmjatt/Quizzical/blob/main/project-output/Results_desk.png)
+
 
 
 
