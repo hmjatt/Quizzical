@@ -39,7 +39,7 @@ function App() {
 
             {gameStart && <Quiz />}
             <Footer />
-			<div className="blobs">
+            <div className="blobs">
                 <svg
                     className="blob1"
                     xmlns="http://www.w3.org/2000/svg"

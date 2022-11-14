@@ -4,7 +4,6 @@ import Loading from "./Loading/Loading";
 import parse from "html-react-parser";
 import Confetti from "react-confetti";
 
-
 function Quiz() {
     /*****************  USE-STATE VARIABLES  *****************/
     // State hook for perticular question
@@ -19,7 +18,6 @@ function Quiz() {
     // Reset the useEffect hook
     const [reset, setReset] = useState(0);
     /*****************  USE-STATE  VARIABLES  *****************/
-
 
     /*********************** useWindowSize hook ***********************************/
     // useWindowSize Hook from https://usehooks.com/useWindowSize/
@@ -68,9 +66,11 @@ function Quiz() {
                         id: nanoid(),
                         question: result.question,
                         correct_answer: result.correct_answer,
-                        answers: result.incorrect_answers.concat(
-                            result.correct_answer
-                        ).sort(() => Math.random() - 0.5), /* Randomize the answers */
+                        answers: result.incorrect_answers
+                            .concat(result.correct_answer)
+                            .sort(
+                                () => Math.random() - 0.5
+                            ) /* Randomize the answers */,
                         selectedAnswer: "",
                     });
                 });

@@ -2,7 +2,6 @@
 
 Create a Trivia Game using ReactJS
 
-
 ## [Live Preview](https://hmjatt.github.io/Quizzical/)
 
 ![This is an image](https://github.com/hmjatt/Quizzical/blob/main/project-output/mobile.png)
@@ -174,7 +173,6 @@ npm run test
 -   [ ] Allow players to select difficulty of trivia questions.
 -   [ ] Divide Quiz Component into smaller components.
 -   [ ] Use Styled Components and CSS Modules to tidy up CSS.
-
 
 <br>
 
