@@ -2,9 +2,9 @@
 
 Create a Trivia Game using ReactJS
 
-<!--
-## [Live Preview]()
--->
+
+## [Live Preview](https://hmjatt.github.io/Quizzical/)
+
 ![This is an image](https://github.com/hmjatt/Quizzical/blob/main/project-output/mobile.png)
 
 <br>
@@ -158,9 +158,9 @@ npm run test
 
 ### 14. Prepare for Deployment 🪢
 
--   [ ] Delete **unnecessary** files from directory and format code with `Prettier`.
--   [ ] Test for _Responsiveness_ and make changes if need be.
--   [ ] Add links to `Live Preview` and _screenshots_.
+-   [x] Delete **unnecessary** files from directory and format code with `Prettier`.
+-   [x] Test for _Responsiveness_ and make changes if need be.
+-   [x] Add links to `Live Preview` and _screenshots_.
 
 ### 15. Deploy 📤
 
