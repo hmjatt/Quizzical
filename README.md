@@ -12,7 +12,7 @@ Create a Trivia Game using ReactJS
 
 ## About ℹ️
 
-**`Quizzical`** is a _Trivia_ game implemented in `ReactJS`. While creating this project I learned about `Event Listeners in React`, `React State`, `Conditional Rendering in React`, `React Hooks(useEffect)`, etc. A player is given _5 random questions_ with _4 choices_ each. Trivia questions are retrieved from [_Open Trivia Database API_](https://opentdb.com/api_config.php). A participant can _validate_ their answers and can play as many times as they want. Have Fun :smile:. After creating the project, it was deployed to `GitHub Pages` :bird: Feel free to reach me on[Twitter](https://twitter.com/hmjatt/) 👾
+**`Quizzical`** is a _Trivia_ game implemented in `ReactJS` by [Live Preview](https://github.com/hmjatt) and [Live Preview](https://github.com/HabibUrRehmanBhattii). While creating this project I learned about `Event Listeners in React`, `React State`, `Conditional Rendering in React`, `React Hooks(useEffect)`, etc. A player is given _5 random questions_ with _4 choices_ each. Trivia questions are retrieved from [_Open Trivia Database API_](https://opentdb.com/api_config.php). A participant can _validate_ their answers and can play as many times as they want. Have Fun :smile:. After creating the project, it was deployed to `GitHub Pages` :bird: Feel free to reach me on[Twitter](https://twitter.com/hmjatt/) 👾
 
 ## Technologies Used 💻
 
@@ -163,7 +163,7 @@ npm run test
 
 ### 15. Deploy 📤
 
--   [ ] Use Official Documentation([link](https://create-react-app.dev/docs/deployment/#github-pages)) to push the project to **GitHub Pages** 🎆🎆🎆
+-   [x] Use Official Documentation([link](https://create-react-app.dev/docs/deployment/#github-pages)) to push the project to **GitHub Pages** 🎆🎆🎆
 
 <br>
 
